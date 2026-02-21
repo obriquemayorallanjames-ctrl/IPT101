@@ -1,0 +1,95 @@
+.todo-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #292626;
+  border-radius: 12px;
+  color: rgb(241, 241, 241);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: rgb(232, 231, 231);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #2a2a3d;
+  border-radius: 8px;
+  cursor: grab;
+  transition: all 0.2s;
+}
+
+.task-list li:active {
+  cursor: grabbing;
+}
+
+.task-list li.dragging {
+  opacity: 0.4;
+  border: 2px dashed #4caf50;
+}
+
+.task-list li:hover {
+  background-color: #30303e;
+}
+
+.task-list li span {
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.task-list li span.completed {
+  text-decoration: line-through;
+  color: #0f0d0d;
+}
+
+.remove-btn {
+  padding: 5px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
