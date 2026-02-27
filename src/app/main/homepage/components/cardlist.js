@@ -63,7 +63,7 @@ const cars = [
         power: "710 HP",
         mileage: "8,400 mi",
         price: "$299,000",
-        image: "https://www.ilusso.com/imagetag/5409/main/l/Used-2020-McLaren-720S-Spider-Performance-1767737574.jpg?1772199789"
+        image: "https://images.unsplash.com/photo-1558618047-3d30db6efac9?w=600&q=80"
     },
 ];
 

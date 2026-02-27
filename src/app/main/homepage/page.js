@@ -45,18 +45,21 @@ const styles = `
         gap: 4px;
     }
 
-    .navbar-links a {
+    .nav-link {
         display: block;
         padding: 6px 14px;
         font-size: 13px;
         font-weight: 500;
         color: #555;
         border-radius: 4px;
-        text-decoration: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
         transition: color 0.2s, background 0.2s;
     }
 
-    .navbar-links a:hover {
+    .nav-link:hover {
         color: #e74c3c;
         background: #fdf0ef;
     }
@@ -87,16 +90,22 @@ const styles = `
         display: flex;
     }
 
-    .mobile-nav a {
+    .mobile-nav-link {
         padding: 12px 24px;
         font-size: 13px;
         font-weight: 500;
         color: #555;
         border-bottom: 1px solid #f0f0f0;
-        text-decoration: none;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: left;
+        width: 100%;
+        cursor: pointer;
+        font-family: inherit;
     }
 
-    .mobile-nav a:hover {
+    .mobile-nav-link:hover {
         color: #e74c3c;
     }
 
@@ -587,12 +596,12 @@ export default function HomePage() {
                 <div className="navbar-logo">Motor<span>X</span></div>
 
                 <ul className="navbar-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><button className="nav-link">Home</button></li>
+                    <li><button className="nav-link">Shop</button></li>
+                    <li><button className="nav-link">Blog</button></li>
+                    <li><button className="nav-link">Pages</button></li>
+                    <li><button className="nav-link">About</button></li>
+                    <li><button className="nav-link">Contact</button></li>
                 </ul>
 
                 <button
@@ -605,12 +614,12 @@ export default function HomePage() {
 
             {/* MOBILE MENU */}
             <div className={`mobile-nav${menuOpen ? " open" : ""}`}>
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Blog</a>
-                <a href="#">Pages</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <button className="mobile-nav-link">Home</button>
+                <button className="mobile-nav-link">Shop</button>
+                <button className="mobile-nav-link">Blog</button>
+                <button className="mobile-nav-link">Pages</button>
+                <button className="mobile-nav-link">About</button>
+                <button className="mobile-nav-link">Contact</button>
             </div>
 
             {/* HERO */}
