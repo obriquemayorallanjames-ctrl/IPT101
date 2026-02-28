@@ -63,7 +63,7 @@ const cars = [
         power: "710 HP",
         mileage: "8,400 mi",
         price: "$299,000",
-        image: "https://images.unsplash.com/photo-1558618047-3d30db6efac9?w=600&q=80"
+        image: "https://res.cloudinary.com/unix-center/image/upload/c_limit,dpr_3.0,f_auto,fl_progressive,g_center,h_580,q_1,w_906/ctjvjtjfxqavguj60uss.jpg"
     },
 ];
 
